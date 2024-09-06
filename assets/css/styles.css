@@ -69,10 +69,10 @@ a {
 .header {
     background: var(--header-bg);
     min-height: calc(100vh + 110px);
-    padding-top: 30px;
 }
 
 .header-top {
+    padding: 30px 0 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,7 +168,7 @@ a {
 /* ===== Hero ===== */
 .hero {
     display: flex;
-    margin-top: 76px;
+    margin-top: 68px;
 }
 
 .hero__content {
@@ -310,4 +310,58 @@ a {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75;
+}
+
+.work {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work-item {
+    border: 16px solid #eaf6ff;
+    padding: 43px 42px;
+    border-radius: 4px;
+    transition: all ease 0.25s;
+}
+
+.work-item:hover {
+    border-color: #2e80ce;
+    transform: translateY(-16px);
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.work__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work__more:hover {
+    color: #2e80ce;
+    font-weight: 400;
 }
